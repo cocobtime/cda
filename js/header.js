@@ -7,18 +7,23 @@ headerTemplate.innerHTML = `
     header {
       background-color: #D115F4;
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url('/assets/bg.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     .logo-container {
       display: flex;
       align-items: center;
-      justify-content: center;
-      color: #fff;
     }
 
     .logo-container img {
-      width: 50px; /* Adjust the size of the logo */
-      height: 50px; /* Adjust the size of the logo */
+      width: 100px;
+      height: 100px;
     }
 
     .logo-container h1 {
