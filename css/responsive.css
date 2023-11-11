@@ -2,150 +2,290 @@
 File Name: responsive.css 
 ---------------------------------------------------------------------*/
 
-@media (min-width: 1200px) and (max-width: 1320px) {}
+@media (min-width: 1343px) and (max-width: 1500px) {
+    .full_bg {
+        height: 100%;
+    }
+    #banner1 .carousel-control-next {
+        right: 43.7%;
+    }
+    #myCarousel .carousel-control-next {
+        right: 43.7%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+    .full_bg {
+        height: 100%;
+    }
+    #banner1 .carousel-control-next {
+        right: 42.1%;
+    }
+    #myCarousel .carousel-control-next {
+        right: 42.1%;
+    }
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .banner_main {
-        margin: 0 151px;
+    .full_bg {
+        height: 100%;
     }
-    .club_btn .read_more {
-        max-width: 296px;
+    .site-navbar ul li {
+        padding-right: 57px;
     }
-    .poa_t {
-        padding: 0 30px;
+    .mar_right {
+        margin-right: 0;
     }
-    .menu_bottom li {
-        padding: 0 26px;
+    .creative .read_more {
+        max-width: 185px;
+        margin-right: 0;
+    }
+    #banner1 .carousel-control-next {
+        right: 39.1%;
+    }
+    #myCarousel .carousel-control-next {
+        right: 39.1%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .banner_main {
-        margin: 0 151px;
+    .full_bg {
+        height: 100%;
     }
-    .poa_t {
-        padding: 0 30px;
+    .site-navbar ul li {
+        padding-right: 31px;
     }
-    .footbol {
-        margin-top: -126px;
+    .mar_right {
+        margin-right: 0;
     }
-    .club figure img {
-        height: 354px;
+    .creative h1 {
+        font-size: 56px;
+        line-height: 70px;
     }
-    .club_btn .read_more {
-        max-width: 220px;
+    .creative p {
+        padding: 5px 0 15px 0;
     }
-    .conta ul li {
-        padding-right: 25px;
+    .creative .read_more {
+        max-width: 142px;
+        margin-right: 0;
     }
-    .conta ul li a img {
-        padding-right: 5px;
+    #banner1 .carousel-control-next {
+        right: 39.1%;
     }
-    .menu_bottom li {
-        padding: 0 11px;
+    #banner1 .carousel-control-prev {
+        left: 40.7%;
+    }
+    #myCarousel .carousel-control-next {
+        right: 39.1%;
+    }
+    #myCarousel .carousel-control-prev {
+        left: 40.7%;
+    }
+    .titlepage h2 {
+        font-size: 37px;
+        line-height: 45px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    header {
-        position: inherit;
-        background: #fff;
+    .full_bg {
+        height: 100%;
     }
-    .banner_main {
-        margin: 0;
+    .grid {
+        display: grid;
     }
-    .sm_n0 {
-        display: none;
+    .order {
+        order: -1;
     }
-    .tes_n0 {
-        display: inherit;
+    .mar_right {
+        margin-right: 0px;
     }
-    .poa_t {
-        padding: 0 30px;
+    .about_img,
+    .agency {
+        margin-top: 30px;
     }
-    .sports_main {
-        margin-bottom: 30px;
+    #banner1 .carousel-control-prev,
+    #banner1 .carousel-control-next {
+        top: 103%;
     }
-    .club_btn .read_more {
-        max-width: 174px;
-        height: 64px;
-        line-height: 64px;
-        margin: 0 4px;
+    #banner1 .carousel-control-next {
+        right: 36.7%;
     }
-    .menu_bottom li {
-        padding: 0 16px;
+    #banner1 .carousel-control-prev {
+        left: 36.7%;
     }
-}
-
-@media (max-width: 575px) {
-    header {
-        position: inherit;
-        background: #fff;
+    #myCarousel .carousel-control-prev,
+    #myCarousel .carousel-control-next {
+        top: 108%;
+    }
+    #myCarousel .carousel-control-next {
+        right: 36.7%;
+    }
+    #myCarousel .carousel-control-prev {
+        left: 36.7%;
+    }
+    .titlepage h2 {
+        font-size: 37px;
+        line-height: 45px;
+    }
+    .pro_file span {
+        padding-bottom: 30px;
     }
     .d_none {
         display: none !important;
     }
-    .email {
-        padding-top: 0 !important;
-        margin-top: -44px;
+    .agency {
+        margin-top: 30px;
+    }
+    .latest {
+        max-width: 377px;
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+    /* navbar css for mobile start */
+    .nav-toggler {
+        display: block;
+        position: absolute;
+        right: 15px;
+        z-index: 99999;
+    }
+    .site-navbar {
+        min-height: 60px;
+    }
+    .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        left: -15px;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        z-index: 99999;
+        box-shadow: 0 0 10px rgb(192, 190, 182);
+    }
+    .site-navbar ul li {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+    }
+    .site-navbar ul li a {
+        padding: 25px 25px 0px 25px;
+    }
+    .site-navbar ul.open {
+        max-height: 100vh;
+        padding-bottom: 25px;
+        overflow: visible;
+    }
+    /* navbar css for mobile end */
+}
+
+@media (max-width: 575px) {
+    .full_bg {
+        height: 100%;
+    }
+    .slider_main {
+        padding: 50px 0 80px 0;
     }
     .logo {
-        display: block;
-        width: 144px;
-        float: left;
-    }
-    .banner_main {
-        margin: 0;
-    }
-    .sm_n0 {
-        display: none;
-    }
-    .tes_n0 {
-        display: inherit;
-    }
-    .poa_t {
-        padding: 0 30px;
-        top: 58px;
-    }
-    .club h1 {
-        font-size: 37px;
-    }
-    .sports_main {
-        margin-bottom: 30px;
-    }
-    .club figure img {
-        height: 276px;
-    }
-    .footbol {
-        margin-top: -33px;
-    }
-    .dorder {
-        border: #1f1d45 solid 10px;
-    }
-    .foot_img {
-        max-width: 260px;
-        padding: 23px 0 9px 0;
-    }
-    .abo_btn a img {
-        width: 100px;
-    }
-    .titlepage h2 {
-        font-size: 30px;
-        line-height: 35px;
-    }
-    .club_btn .read_more {
-        margin-top: 5px;
-    }
-    .footer {
-        background: #070808;
-    }
-    .conta {
         text-align: left;
     }
-    .menu_bottom li {
-        padding: 0px 3px;
+    .about_img,
+    .agency {
+        margin-top: 30px;
     }
-    .menu_bottom ul li a {
-        font-size: 14px;
+    .creative .read_more {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+    .mar_right {
+        margin-right: 0px;
+    }
+    #banner1 .carousel-control-prev,
+    #banner1 .carousel-control-next {
+        top: 103%;
+    }
+    #banner1 .carousel-control-next {
+        right: 25.7%;
+    }
+    #banner1 .carousel-control-prev {
+        left: 25.7%;
+    }
+    #myCarousel .carousel-control-prev,
+    #myCarousel .carousel-control-next {
+        top: 108%;
+    }
+    #myCarousel .carousel-control-next {
+        right: 25.7%;
+    }
+    #myCarousel .carousel-control-prev {
+        left: 25.7%;
+    }
+    .titlepage h2 {
+        font-size: 37px;
+        line-height: 45px;
+    }
+    .pro_file span {
+        padding-bottom: 30px;
+    }
+    .grid {
+        display: grid;
+    }
+    .order {
+        order: -1;
+    }
+    .latest {
+        max-width: 317px;
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+    .titlepage h2 {
+        line-height: 40px;
+        font-size: 28px;
+    }
+    .d_none {
+        display: none !important;
+    }
+    /* navbar css for mobile start */
+    .navbar-area {
+        margin-top: -67px;
+    }
+    .nav-toggler {
+        display: block;
+        position: absolute;
+        right: 15px;
+        z-index: 99999;
+    }
+    .site-navbar {
+        min-height: 60px;
+    }
+    .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        z-index: 99999;
+        box-shadow: 0 0 10px rgb(192, 190, 182);
+    }
+    .site-navbar ul li {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+    }
+    .site-navbar ul li a {
+        padding: 25px 25px 0px 25px;
+    }
+    .site-navbar ul.open {
+        max-height: 100vh;
+        padding-bottom: 25px;
+        overflow: visible;
     }
 }
