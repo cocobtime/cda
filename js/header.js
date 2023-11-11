@@ -4,6 +4,7 @@ const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
   <style>
+    /* General Styles */
     header {
       background-color: #D115F4;
       padding: 10px;
@@ -30,8 +31,9 @@ headerTemplate.innerHTML = `
       margin-left: 10px;
     }
 
+    /* Navigation Styles */
     .sidepanel {
-      /* Add styles for your sidepanel here */
+      display: none; /* Initially hidden on larger screens */
     }
 
     .sidepanel a {
@@ -44,6 +46,26 @@ headerTemplate.innerHTML = `
     .sidepanel a:hover {
       background-color: #fff;
       color: #D115F4;
+    }
+
+    /* Media Query for Small Screens */
+    @media (max-width: 575px) {
+      .sidepanel {
+        display: block; /* Display as a block on small screens */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #D115F4;
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+
+      .sidepanel a {
+        padding: 15px;
+        text-align: center;
+        display: block;
+      }
     }
   </style>
 
