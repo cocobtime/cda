@@ -74,17 +74,21 @@ headerTemplate.innerHTML = `
     <div class="logo-container">
       <img src="/assets/logo.png" alt="Coeur D'amour logo">
       <h1>Coeur D'amour</h1>
+
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-  
-        <li><a href="mission.html">Mission</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="donation.html">Donation</a></li>
-      </ul>
-    </nav>
+    <div id="mySidepanel" class="sidepanel">
+
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mission.html">Mission</a>
+    <a href="contact.html">Contact</a>
+    <a href="donation.html">Donation</a>
+    
+
+    </div>
+
+
   </header>
 `;
 

@@ -59,8 +59,10 @@ footerTemplate.innerHTML = `
 </style>
 ;
 
-<div class="center">
-  <div class="ft-container">
+<footer>
+<div class="footer">
+
+
     <img src="/assets/coeur white.png" alt="Coeur D'amour logo">
     <div class="menu-links">
       <a href="index.html">Home</a>
@@ -74,8 +76,10 @@ footerTemplate.innerHTML = `
     Adresse: 70 High Street, London, UK<br>
     123 Rue de l'Espoir, Kinshasa, RDC<br><br>
     All rights reserved to Coeur D'amour 2013
+
+
   </div>
-</div>
+</footer>
 
 
 `;
