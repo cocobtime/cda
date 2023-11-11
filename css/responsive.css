@@ -289,3 +289,42 @@ File Name: responsive.css
         overflow: visible;
     }
 }
+
+/* Styles for header-component */
+header {
+    background-color: #D115F4;
+    padding: 10px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .logo-container img {
+    width: 50px; /* Adjust the size of the logo */
+    height: 50px; /* Adjust the size of the logo */
+  }
+  
+  .logo-container h1 {
+    margin-left: 10px;
+  }
+  
+  .sidepanel {
+    /* Add styles for your sidepanel here */
+  }
+  
+  .sidepanel a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .sidepanel a:hover {
+    background-color: #fff;
+    color: #D115F4;
+  }
+  
