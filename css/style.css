@@ -135,3 +135,12 @@ ul {
         display: none;
     }
 }
+
+
+.logo-image {
+    height: auto; /* Maintain aspect ratio */
+    width: 120px; /* Adjust width as needed */
+    display: block; /* Display as block-level element */
+    margin: 0 auto; /* Center the logo in its container */
+    padding: 10px 0; /* Add some padding around the logo */
+}
