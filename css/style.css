@@ -1,91 +1,105 @@
-/* Reset some default styles */
-body,
-h1,
-h2,
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-nav {
-  background-color: #555;
-  padding: 10px;
-}
-
-nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-nav li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #fff;
-}
-
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 10px;
-}
-
-.main-image {
-  margin-bottom: 20px;
-}
-
-.main-image img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-}
-
-.second-image {
-  background-color: #ddd;
-  height: 200px;
-  margin-bottom: 20px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Responsive Styles */
-
-@media only screen and (max-width: 600px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header img {
+    width: 200px;
+    height: auto;
+  }
+  
   nav {
-    padding: 5px;
+    background-color: #2196F3;
+    padding: 20px 0;
+    text-align: center;
   }
-
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
   nav li {
-    display: block;
-    margin-bottom: 5px;
+    display: inline-block;
+    margin: 0 10px;
   }
-
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  
+  nav li a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+  }
+  
   main {
-    padding: 5px;
+    padding: 20px;
   }
-}
+  
+  .main-image {
+    text-align: center;
+  }
+  
+  .main-image img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .second-image {
+    background-image: url(/assets/second-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .second-image h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  footer-component {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    header img {
+      width: 100px;
+    }
+  
+    nav ul {
+      text-align: left;
+    }
+  
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .main-image img {
+      width: 300px;
+    }
+  }
+  
