@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +15,24 @@ header {
     background-color: #D115F4;
     padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
 header img {
     width: 200px;
     height: auto;
+}
+
+.hamburger, .close {
+    display: none;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 nav {
@@ -33,8 +45,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav li {
@@ -47,17 +57,29 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    color: #D115F4;
-}
-
 @media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
+    .hamburger {
+        display: block;
     }
-    
-    nav li {
-        margin: 10px 0;
+
+    .close {
+        display: none;
+    }
+
+    .navbar.active .close {
+        display: block;
+    }
+
+    .navbar.active .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
     }
 }
 
