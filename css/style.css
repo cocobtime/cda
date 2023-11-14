@@ -1,105 +1,82 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html, body {
-    font-family: sans-serif;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-  }
-  
-  header {
-    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #D115F4;
     padding: 20px 0;
     text-align: center;
-  }
-  
-  header img {
+}
+
+header img {
     width: 200px;
     height: auto;
-  }
-  
-  nav {
-    background-color: #2196F3;
+}
+
+nav {
+    background-color: #F4152E;
     padding: 20px 0;
     text-align: center;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  nav li a {
-    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
-    padding: 10px 15px;
-  }
-  
-  nav li a:hover {
-    background-color: #00bcd4;
-    color: #fff;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .main-image {
-    text-align: center;
-  }
-  
-  .main-image img {
-    width: 500px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .second-image {
-    background-image: url(/assets/second-image.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .second-image h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  footer-component {
-    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #D115F4;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+button {
+    background-color: #D115F4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #F4152E;
+}
+
+footer {
+    background-color: #333;
+    color: white;
     padding: 20px 0;
     text-align: center;
-  }
-  
-  @media (max-width: 768px) {
-    header img {
-      width: 100px;
-    }
-  
-    nav ul {
-      text-align: left;
-    }
-  
-    nav li {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    .main-image img {
-      width: 300px;
-    }
-  }
-  
+}
