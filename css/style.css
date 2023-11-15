@@ -144,3 +144,14 @@ ul {
     margin: 0 auto; /* Center the logo in its container */
     padding: 10px 0; /* Add some padding around the logo */
 }
+
+
+.header-logo {
+    display: flex;
+    align-items: center; /* To vertically align items if they have different heights */
+}
+
+.logo-image {
+    /* Your existing styles for logo-image, if any */
+    margin-right: 10px; /* Adds space between the image and the text */
+}
