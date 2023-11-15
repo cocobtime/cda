@@ -1,5 +1,5 @@
-/* Basic Styles */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
 }
 
@@ -7,38 +7,57 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px;
 }
 
-.logo-container {
+.logo-link {
+    margin-bottom: 10px;
+}
+
+.logo-image {
+    max-width: 100px;
+    height: auto;
+}
+
+.nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.nav {
-    display: none; /* Initially hidden on mobile */
+.nav .menu li {
+    margin: 5px 0;
 }
 
-/* Styles for Large Screens */
-@media screen and (min-width: 768px) {
+.nav .menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
     .header-content {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
     }
 
-    .nav {
-        display: block; /* Show navigation on large screens */
+    .nav .menu {
+        flex-direction: row;
     }
 
-    .side-menu {
-        display: none; /* Hide hamburger menu on large screens */
+    .nav .menu li {
+        margin: 0 10px;
     }
 }
 
-/* Styles for Mobile Screens */
-@media screen and (max-width: 767px) {
-    .side-menu:checked + .hamb + .nav {
-        display: block;
-    }
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
