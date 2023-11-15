@@ -16,6 +16,7 @@ body {
     transition: width 0.5s ease;
 }
 
+/* Hamburger Menu Styles */
 .hamb {
     display: none;
     cursor: pointer;
@@ -44,8 +45,13 @@ body {
     margin: 0 10px;
 }
 
-.menu a:hover {
+.menu a:hover, .menu a:focus {
     text-decoration: underline;
+}
+
+/* Checkbox for Hamburger Menu */
+.menu-toggle {
+    display: none; /* Hide the actual checkbox */
 }
 
 /* Media Query for Mobile Screens */
@@ -55,11 +61,20 @@ body {
     }
 
     .nav {
-        display: none;
+        display: none; /* Hide the menu by default on mobile screens */
     }
 
     .hamb {
         display: block;
+    }
+
+    .menu-toggle:checked + .hamb + .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
     }
 
     .hamb-line:hover {
