@@ -1,83 +1,59 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header-content {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    padding: 1rem;
+    background-color: #f3f3f3;
 }
 
-.logo-image {
-    width: 150px; /* Adjust as per your design */
+.logo-link img {
+    max-width: 100%;
     height: auto;
-    transition: width 0.5s ease;
-}
-
-/* Hamburger Menu Styles */
-.hamb {
-    display: none;
-    cursor: pointer;
-}
-
-.hamb-line {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin: 5px 0;
-    transition: background-color 0.3s;
 }
 
 .nav {
-    display: flex;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 0.5rem 0;
 }
 
 .menu {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .menu li {
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
-.menu a:hover, .menu a:focus {
-    text-decoration: underline;
+.menu li a {
+    text-decoration: none;
+    color: #333;
 }
 
-/* Checkbox for Hamburger Menu */
-.menu-toggle {
-    display: none; /* Hide the actual checkbox */
-}
-
-/* Media Query for Mobile Screens */
-@media screen and (max-width: 768px) {
-    .logo-image {
-        width: 100px; /* Smaller logo on mobile screens */
-    }
-
-    .nav {
-        display: none; /* Hide the menu by default on mobile screens */
-    }
-
-    .hamb {
-        display: block;
-    }
-
-    .menu-toggle:checked + .hamb + .nav {
-        display: flex;
-        flex-direction: column;
-    }
-
+/* Responsive Styles */
+@media (max-width: 768px) {
     .menu li {
-        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
     }
+}
 
-    .hamb-line:hover {
-        background-color: grey;
+/* Styles for larger screens */
+@media (min-width: 769px) {
+    .header-content {
+        max-width: 1200px;
+        margin: auto;
     }
 }
