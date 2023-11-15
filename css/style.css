@@ -10,12 +10,14 @@ body {
 }
 
 .logo-link img {
-    max-width: 100px;
+    max-width: 100px; /* Change to your preferred size */
     height: auto;
 }
 
 .menu-toggle {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
 }
 
 .hamb {
