@@ -10,7 +10,7 @@ body {
 }
 
 .logo-link img {
-    max-width: 100px; /* Change to your preferred size */
+    width: 200px; /* Adjusted size */
     height: auto;
 }
 
@@ -60,29 +60,16 @@ footer {
 
 /* Small screen adjustments */
 @media (max-width: 767px) {
-    .menu-toggle {
-        display: block;
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     .hamb {
         display: block;
     }
 
-    .menu-toggle:checked + .hamb + .nav {
-        display: block;
-    }
-}
-
-/* Large screen adjustments */
-@media (min-width: 768px) {
-    .header-content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .nav {
-        display: block;
-        margin-top: 0;
-    }
-}
+        position: absolute;
+        right: 
