@@ -1,3 +1,4 @@
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -22,14 +23,13 @@ header {
     padding: 1rem;
 }
 
-
-/* CSS for making the logo and text side by side */
+/* Logo and Name Styles */
 .logo-link {
     text-decoration: none;
 }
 
 .logo-container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -44,10 +44,6 @@ header {
     font-weight: bold;
     color: #333;
 }
-
-
-
-
 
 /* Navigation Styles */
 .nav {
