@@ -22,8 +22,13 @@ header {
     padding: 1rem;
 }
 
-/* Logo and Name Styles */
-.logo-and-name {
+
+/* CSS for making the logo and text side by side */
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-container {
     display: flex;
     align-items: center;
 }
@@ -37,7 +42,12 @@ header {
 .logo-text {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #333;
 }
+
+
+
+
 
 /* Navigation Styles */
 .nav {
