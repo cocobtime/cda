@@ -1,4 +1,5 @@
 /* Basic Styles */
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -34,6 +35,7 @@ body {
 }
 
 /* Styles for Large Screens */
+
 @media screen and (min-width: 768px) {
     .header-content {
         display: flex;
@@ -42,7 +44,7 @@ body {
     }
 
     .logo-link {
-        margin-bottom: 20px; /* Add some space between logo and menu */
+        margin-bottom: 2%; /* Responsive margin */
     }
 
     .nav {
@@ -54,19 +56,17 @@ body {
         display: inline-block; /* Inline display for large screens */
     }
 
-    .menu-toggle, .hamb {
-        display: none; /* Hide hamburger menu on large screens */
+    /* Hide hamburger menu on large screens */
+    .menu-toggle,
+    .hamb {
+        display: none;
     }
 }
 
 /* Styles for Mobile Screens */
-@media screen and (max-width: 767px) {
-    .menu-toggle:checked + .hamb + .nav {
-        display: block;
-    }
 
-    .menu li {
-        display: block; /* Stack menu items vertically on small screens */
-        margin-right: 0; /* Remove right margin on small screens */
+@media screen and (max-width: 767px) {
+    .menu-toggle {
+        display: block; /* Show hamburger menu on small screens */
     }
 }
