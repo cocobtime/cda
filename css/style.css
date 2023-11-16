@@ -14,7 +14,7 @@ body {
 }
 
 .logo-image {
-    max-width: 40%; /* Ensures the image is responsive */
+    max-width: 20%; /* Ensures the image is responsive */
     height: auto;
 }
 
