@@ -65,7 +65,13 @@ footer {
     }
 
     #hamburger-icon {
+        
+
         display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
     }
 
     #hamburger-icon .bar {
@@ -76,9 +82,3 @@ footer {
         transition: 0.4s;
     }
 }
-
-@media only screen and (max-width: 600px) {
-    #hamburger-icon {
-      display: block;
-    }
-  }
