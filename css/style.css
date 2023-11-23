@@ -14,8 +14,15 @@ body {
 }
 
 .logo-image {
-    max-width: 40%; /* Ensures the image is responsive */
-    height: auto;
+    max-width: 100%; /* Ensures the image is responsive */
+    height: 50%;
+}
+
+
+.toggle-button {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .nav {
@@ -43,13 +50,18 @@ body {
         align-items: center;
     }
 
+
+    .toggle-button {
+        display: block;
+    }
+
+
+
     .logo-link {
         margin-bottom: 2%; /* Responsive margin */
     }
 
-    .nav {
-        display: block; /* Show navigation on large screens */
-        background-color: transparent; /* No colored background on large screens */
+    .nav {  display: none;
     }
 
     .menu li {
@@ -57,9 +69,9 @@ body {
     }
 
     /* Hide hamburger menu on large screens */
-    .menu-toggle,
-    .hamb {
-        display: none;
+    #menu-toggle:checked + .toggle-button + .nav {
+
+        display: block;
     }
 }
 
