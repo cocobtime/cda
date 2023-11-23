@@ -17,7 +17,7 @@ body {
 /* Header styling */
 header {
     padding: 0 20px;
-    background-color: #D115F4; /* Using vibrant purple for header */
+    background-color: #D115F4; /* Vibrant purple for header */
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -64,18 +64,22 @@ ul li:hover {
 
 #login {
     border: 1px solid #F4152E; /* Bright red border */
+    background-color: #2EEA0B; /* Bright green background */
+    color: white;
 }
 
 #signup {
     border: 1px solid #D115F4; /* Vibrant purple border */
+    background-color: #0BEAD1; /* Teal/Turquoise background */
+    color: white;
 }
 
 #signup a {
-    color: #D115F4;
+    color: white;
 }
 
 #login a {
-    color: #F4152E;
+    color: white;
 }
 
 /* Hamburger icon for mobile menu */
@@ -128,7 +132,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #F4152E; /* Hover effect in bright red */
+    color: #0BEAD1; /* Teal/Turquoise for hover effect */
 }
 
 /* Responsive design */
