@@ -15,7 +15,7 @@ body {
 
 .logo-image {
     max-width: 100%; /* Ensures the image is responsive */
-    height: 40%;
+    height: 10%;
 }
 
 
@@ -50,7 +50,10 @@ body {
         align-items: center;
     }
 
-
+    .logo-image {
+        max-width: 100%; /* Ensures the image is responsive */
+        height: 40%;
+    }
     .toggle-button {
         display: block;
     }
