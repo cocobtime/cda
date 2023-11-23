@@ -52,7 +52,7 @@ body {
 
     .logo-image {
         max-width: 100%; /* Ensures the image is responsive */
-        height: 40%;
+        height: 30%;
     }
     .toggle-button {
         display: block;
