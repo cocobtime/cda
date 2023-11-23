@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Coeur D'amour</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Accueil</title>
 </head>
 <body>
     <header>
         <div id="brand"><a href="/">Coeur D'amour</a></div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <nav>
-            <ul>
+            <ul id="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Mission.html">Missions</a></li>
                 <li><a href="actions.html">Actions</a></li>
@@ -19,45 +23,15 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
     </header>
 
-    <main>
-        <!-- Main content of the page goes here -->
-    </main>
+    <!-- Main content of your website here -->
 
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Coeur D'amour</h3>
-                <p>Brief description or mission statement of Coeur D'amour.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="Mission.html">Missions</a></li>
-                    <li><a href="actions.html">Actions</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: contact@coeurdamour.org</p>
-                <p>Phone: +123 456 7890</p>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <!-- Social media links here -->
-            </div>
+            <p>© 2023 Coeur D'amour. All rights reserved.</p>
         </div>
-        <p>&copy; 2023 Coeur D'amour. All rights reserved.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

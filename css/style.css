@@ -1,154 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-/* Resetting default styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
-    background-color: #353836; /* Dark background for contrast */
+    background-color: #353836;
     color: white;
     font-family: "Poppins", sans-serif;
 }
 
-/* Header styling */
 header {
     padding: 0 20px;
-    background-color: #D115F4; /* Vibrant purple for header */
-    height: 50px;
+    background-color: #1d1f1d;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#brand {
+#brand a {
+    color: #D115F4; /* Bright purple for brand */
     font-weight: bold;
     font-size: 18px;
 }
 
-#brand a {
-    color: white; /* White text for contrast */
-    text-decoration: none;
-}
-
-/* Navigation menu */
-ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-ul a {
-    color: white;
-    padding: 5px;
-    margin-left: 10px;
-    text-decoration: none;
-}
-
-ul li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-    color: #F4152E; /* Bright red for hover effect */
-}
-
-/* Buttons for login and signup */
-#login,
-#signup {
-    border-radius: 5px;
-    padding: 5px 8px;
-}
-
-#login {
-    border: 1px solid #F4152E; /* Bright red border */
-    background-color: #2EEA0B; /* Bright green background */
-    color: white;
-}
-
-#signup {
-    border: 1px solid #D115F4; /* Vibrant purple border */
-    background-color: #0BEAD1; /* Teal/Turquoise background */
-    color: white;
-}
-
-#signup a {
-    color: white;
-}
-
-#login a {
-    color: white;
-}
-
-/* Hamburger icon for mobile menu */
 #hamburger-icon {
-    margin: auto 0;
     display: none;
     cursor: pointer;
 }
 
-#hamburger-icon div {
-    width: 35px;
+#hamburger-icon .bar {
+    width: 30px;
     height: 3px;
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
 }
 
-/* Footer styling */
-footer {
-    background-color: #D115F4; /* Vibrant purple background */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
     color: white;
-    padding: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    color: #F4152E; /* Vivid red on hover */
+}
+
+footer {
+    background-color: #1d1f1d;
+    color: #D115F4; /* Bright purple for footer text */
     text-align: center;
+    padding: 10px 0;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    font-size: 14px;
 }
 
-.footer-section {
-    flex: 1;
-    min-width: 150px;
-    margin: 10px;
-}
-
-.footer-section h3 {
-    color: #F4152E; /* Bright red for headings */
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-    color: #0BEAD1; /* Teal/Turquoise for hover effect */
-}
-
-/* Responsive design */
 @media only screen and (max-width: 600px) {
-    header nav {
-        display: none;
-    }
-
     #hamburger-icon {
         display: block;
     }
 
-    .footer-content {
+    nav ul {
+        display: none;
+        position: absolute;
+        background-color: #1d1f1d;
+        right: 0;
+        top: 50px;
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
-}
 
-/* Additional styles can be added as needed */
+    nav ul.open {
+        display: flex;
+    }
+}
