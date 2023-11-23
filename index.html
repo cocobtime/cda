@@ -1,41 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coeur d'Amour</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Navigation bar</title>
+  </head>
+  <body>
     <header>
-        <div class="header-content">
-            <a href="#" class="logo-link">
-                <img src="/images/logo.png" alt="Coeur d'Amour Logo" class="logo-image">
-            </a>
-    
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="toggle-button">&#9776;</label>
-    
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">Qui nous sommes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="donation.html">Donation</a></li>
-                    <li><a href="mission.html">Mission</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div id="brand"><a href="/">MyCompany</a></div>
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </div>
     </header>
-
-    <main>
-        </main>
-
-    <footer>
-        <p>© 2023 Coeur d'Amour. Tous droits réservés.</p>
-    </footer>
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
