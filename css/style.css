@@ -1,138 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+/* Resetting default styles */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-  background-color: #353836;
-  color: white;
-  font-family: "Poppins", sans-serif;
+    background-color: #353836; /* Dark background for contrast */
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
 
-header a {
-  text-decoration: none;
-}
-
+/* Header styling */
 header {
-  padding: 0 20px;
-  background-color: #1d1f1d;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
+    padding: 0 20px;
+    background-color: #D115F4; /* Using vibrant purple for header */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #brand {
-  font-weight: bold;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 #brand a {
-  color: #09c372;
+    color: white; /* White text for contrast */
+    text-decoration: none;
 }
 
+/* Navigation menu */
 ul {
-  list-style: none;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 ul a {
-  color: white;
-}
-
-ul li {
-  padding: 5px;
-  margin-left: 10px;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 ul li:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: #F4152E; /* Bright red for hover effect */
 }
 
+/* Buttons for login and signup */
 #login,
 #signup {
-  border-radius: 5px;
-  padding: 5px 8px;
+    border-radius: 5px;
+    padding: 5px 8px;
 }
 
 #login {
-  border: 1px solid #498afb;
+    border: 1px solid #F4152E; /* Bright red border */
 }
 
 #signup {
-  border: 1px solid #ff3860;
+    border: 1px solid #D115F4; /* Vibrant purple border */
 }
 
 #signup a {
-  color: #ff3860;
+    color: #D115F4;
 }
 
 #login a {
-  color: #498afb;
+    color: #F4152E;
 }
 
+/* Hamburger icon for mobile menu */
 #hamburger-icon {
-  margin: auto 0;
-  display: none;
-  cursor: pointer;
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
 }
 
 #hamburger-icon div {
-  width: 35px;
-  height: 3px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
-.open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
+/* Footer styling */
+footer {
+    background-color: #D115F4; /* Vibrant purple background */
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.open .bar2 {
-  opacity: 0;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
 }
 
-.open .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+.footer-section h3 {
+    color: #F4152E; /* Bright red for headings */
 }
 
-.mobile-menu {
-  display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
+.footer-section ul {
+    list-style: none;
+    padding: 0;
 }
 
-.mobile-menu li {
-  margin-bottom: 10px;
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
 }
 
+.footer-section ul li a:hover {
+    color: #F4152E; /* Hover effect in bright red */
+}
+
+/* Responsive design */
 @media only screen and (max-width: 600px) {
-  header nav {
-    display: none;
-  }
+    header nav {
+        display: none;
+    }
 
-  #hamburger-icon {
-    display: block;
-  }
+    #hamburger-icon {
+        display: block;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+/* Additional styles can be added as needed */
