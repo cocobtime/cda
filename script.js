@@ -1,4 +1,3 @@
-// script.js
 function toggleMobileMenu() {
     var mobileMenu = document.getElementById("mobile-menu");
     if (mobileMenu.style.display === "block") {
@@ -7,3 +6,6 @@ function toggleMobileMenu() {
       mobileMenu.style.display = "block";
     }
   }
+  
+  document.getElementById("hamburger-icon").addEventListener("click", toggleMobileMenu);
+  
