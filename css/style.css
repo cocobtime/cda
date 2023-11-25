@@ -89,4 +89,7 @@ footer {
 
     /* Additional mobile-specific styles (if needed) */
     /* ... */
+    header nav {
+        display: none;
+      }
 }
