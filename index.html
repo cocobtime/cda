@@ -3,37 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Web Design Example</title>
 </head>
 <body>
     <header>
-        <div id="brand">
-            <a href="/">
-                <img src="/images/logo.png" alt="Logo">
-            </a>
-        </div>
-        <div id="hamburger-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <nav id="navbar">
+        <h1>My Website</h1>
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Additional content goes here -->
-
-    <script>
-        function toggleMenu() {
-            var navbar = document.getElementById("navbar");
-            navbar.style.display = navbar.style.display === "block" ? "none" : "block";
-        }
-    </script>
+    <section id="home">
+        <h2>Welcome to My Website</h2>
+        <p>This is a responsive web design example.</p>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Information about our company.</p>
+    </section>
+    <!-- More sections as needed -->
+    <footer>
+        <p>Copyright &copy; 2023 My Website</p>
+    </footer>
 </body>
 </html>
