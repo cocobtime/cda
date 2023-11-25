@@ -1,61 +1,36 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Existing styles ... */
+
+/* Hamburger Icon */
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+#hamburger-icon .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 0 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-}
-
-/* Responsive Design */
+/* Media Query */
 @media screen and (max-width: 768px) {
-    nav ul {
-        padding: 0;
+    #hamburger-icon {
+        display: block;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar ul {
+        width: 100%;
         text-align: center;
     }
 
-    nav ul li {
+    #navbar ul li {
         display: block;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
 }
