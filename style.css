@@ -1,36 +1,90 @@
-/* Existing styles ... */
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-/* Hamburger Icon */
+/* Global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-content {
+  font-size: 14px;
+}
+
+/* Header styles */
+header {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#brand img {
+  width: 150px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+#nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  color: #009688;
+}
+
+/* Hamburger menu icon styles */
 #hamburger-icon {
-    display: none;
-    cursor: pointer;
+  display: none; /* Initially hidden on desktop */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
 }
 
-#hamburger-icon .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-/* Media Query */
+/* Mobile styles */
 @media screen and (max-width: 768px) {
-    #hamburger-icon {
-        display: block;
-    }
+  /* Ensure the hamburger icon is visible and has appropriate size on mobile */
+  #hamburger-icon {
+    display: block; /* Ensure it's always visible on mobile */
+    width: 40px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    top: 10px;
+    right: 10px;
+  }
 
-    #navbar {
-        display: none;
-    }
-
-    #navbar ul {
-        width: 100%;
-        text-align: center;
-    }
-
-    #navbar ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
+  /* Hide the navigation bar initially on mobile devices */
+  nav #nav-list {
+    display: none;
+  }}
+  
