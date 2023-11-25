@@ -87,7 +87,12 @@ nav a {
         display: none;
     }
 
+    #main-menu {
+        display: none;
+      }
+
     #mobile-menu {
         display: block;
+        display: none;
     }
 }

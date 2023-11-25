@@ -1,8 +1,9 @@
+// script.js
 function toggleMobileMenu() {
-    const navbar = document.getElementById('mobile-menu');
-    if (navbar.style.display === 'block') {
-        navbar.style.display = 'none';
+    var mobileMenu = document.getElementById("mobile-menu");
+    if (mobileMenu.style.display === "block") {
+      mobileMenu.style.display = "none";
     } else {
-        navbar.style.display = 'block';
+      mobileMenu.style.display = "block";
     }
-}
+  }
