@@ -1,11 +1,6 @@
-function toggleMobileMenu() {
-    var mobileMenu = document.getElementById("mobile-menu");
-    if (mobileMenu.style.display === "block") {
-      mobileMenu.style.display = "none";
-    } else {
-      mobileMenu.style.display = "block";
-    }
-  }
-  
-  document.getElementById("hamburger-icon").addEventListener("click", toggleMobileMenu);
-  
+const menuBtn = document.querySelector('.menu-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');  
+});
