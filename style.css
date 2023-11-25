@@ -84,7 +84,7 @@ nav a:hover {
   }
 
   /* Hide the navigation bar initially on mobile devices */
-  nav #nav-list {
+  #nav-list {
     display: none;
-  }}
-  
+  }
+}
