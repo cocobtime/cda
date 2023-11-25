@@ -58,27 +58,35 @@ footer {
 .footer-content {
     font-size: 14px;
 }
+/* Existing CSS content */
+/* ... (rest of your existing CSS) ... */
 
-@media only screen and (max-width: 600px) {
-    nav {
-        display: none;
-    }
-
-    #hamburger-icon {
-        
-
-        display: block;
+/* Styles for hamburger menu icon */
+#hamburger-icon {
+    display: block;
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 1;
+}
+
+#hamburger-icon .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Ensuring the hamburger icon is visible and has appropriate size on mobile */
+    #hamburger-icon {
+        display: block; /* Ensure it's always visible on mobile */
+        width: 40px; /* Adjust size as needed */
+        height: 30px; /* Adjust size as needed */
     }
 
-    #hamburger-icon .bar {
-        width: 30px;
-        height: 3px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
-    }
+    /* Additional mobile-specific styles (if needed) */
+    /* ... */
 }
