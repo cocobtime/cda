@@ -93,3 +93,10 @@ footer {
         display: none;
       }
 }
+
+
+@media screen and (max-width: 768px) {
+    nav #nav-list {
+      display: none;
+    }
+  }
