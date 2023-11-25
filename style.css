@@ -1,57 +1,53 @@
-/* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
-/* Global styles */
-/* ... (rest of your global styles) ... */
-
-/* Header styles */
-header {
-  /* ... (rest of your header styles) ... */
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-#navbar ul { /* Updated from #nav-list to match HTML */
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  /* ... (rest of your nav a styles) ... */
-}
-
-/* Hamburger menu icon styles */
-#hamburger-icon {
-  display: none; /* Initially hidden on desktop */
-  /* ... (rest of your hamburger-icon styles) ... */
-}
-
-.bar {
-  /* ... (rest of your .bar styles) ... */
-}
-
-/* Mobile styles */
-@media screen and (max-width: 768px) {
-  /* ... (rest of your mobile styles) ... */
-
-  /* Hide the navigation bar initially on mobile devices */
-  #navbar ul { /* This targets the navigation bar */
-    display: none;
-    flex-direction: column;
-    width: 100%;
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
   }
-
-  #navbar ul li {
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #666;
+  }
+  
+  .hero {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
     text-align: center;
-    padding: 10px 0;
+    color: white;
+    padding: 100px 0;
   }
-
-  #navbar {
-    display: none;
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
   }
-}
+  
+  .hero
+  
