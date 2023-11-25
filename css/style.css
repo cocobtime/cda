@@ -1,89 +1,75 @@
-/* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
-/* Global styles */
+/* General Reset */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #fff;
-  color: #333;
-  font-family: "Poppins", sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.footer-content {
-  font-size: 14px;
-}
-
-/* Header styles */
 header {
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #brand img {
-  width: 150px;
-  height: auto;
+    width: 100px;
+}
+
+#hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
 }
 
 nav {
-  display: flex;
-  align-items: center;
+    /* Initially hide the nav on mobile */
 }
 
-#nav-list {
-  list-style-type: none;
-  display: flex;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px 15px;
-  margin-left: 10px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-nav a:hover {
-  color: #009688;
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-/* Hamburger menu icon styles */
-#hamburger-icon {
-  display: none; /* Initially hidden on desktop */
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1;
-}
-
-.bar {
-  width: 30px;
-  height: 3px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-/* Mobile styles */
+/* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
-  /* Ensure the hamburger icon is visible and has appropriate size on mobile */
-  #hamburger-icon {
-    display: block; /* Ensure it's always visible on mobile */
-    width: 40px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-    top: 10px;
-    right: 10px;
-  }
+    #hamburger-icon {
+        display: block;
+    }
 
-  /* Hide the navigation bar initially on mobile devices */
-  nav #nav-list {
-    display: none;
-  }
+    nav ul {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
