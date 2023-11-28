@@ -31,9 +31,29 @@ body {
     cursor: pointer;
   }
   
+
+  #navigation {
+    display: none;
+  }
+  
+  #navigation.active {
+    display: block;
+  }
+  
   @media (max-width: 768px) {
-    #toggle-menu {
-      display: block;
+    #navigation ul {
+      padding: 0;
+      list-style: none;
+      text-align: center;
+    }
+  
+    #navigation ul li {
+      padding: 10px 0;
+    }
+  
+    #navigation ul li a {
+      text-decoration: none;
+      color: black;
     }
   }
   
