@@ -1,79 +1,17 @@
-/* Base styles */
-.navbar {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-}
-
-.navbar .logo {
-    font-size: 1.5rem;
-}
-
-.navbar-links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.navbar-links ul li {
-    text-align: center;
-    padding: 0.5rem 0;
-}
-
-.navbar-links ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.toggle-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 24px;
-    width: 30px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-}
-
-/* Media query for larger screens */
-@media (min-width: 768px) {
-    .navbar-links ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .toggle-button {
-        display: none;
-    }
-}
-/* Reset some default styles */
+/* Reset default styles */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* You can choose your preferred font */
+    font-family: Arial, sans-serif; /* Choose your preferred font */
 }
 
-/* Full body styles */
+/* Body styles */
 body {
     background-color: #f4f4f4; /* Light grey background */
     color: #333; /* Dark grey text */
     line-height: 1.6; /* Spacing for readability */
-    padding: 20px; /* Padding around the page content */
+    padding: 20px; /* Padding around page content */
 }
 
 /* Navbar styles */
@@ -87,17 +25,18 @@ body {
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Logo size */
 }
 
-/* Style for navbar links */
+/* Navbar links styles */
+.navbar-links {
+    display: none; /* Hidden by default for mobile */
+}
+
 .navbar-links ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: none;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
@@ -111,7 +50,7 @@ body {
     color: white;
 }
 
-/* Hamburger menu button styles */
+/* Toggle button styles for mobile view */
 .toggle-button {
     border: none;
     background: none;
@@ -131,23 +70,29 @@ body {
 
 /* Media query for larger screens */
 @media (min-width: 768px) {
+    .navbar-links {
+        display: flex; /* Show links in a row */
+        align-items: center;
+    }
+
     .navbar-links ul {
-        display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .toggle-button {
-        display: none;
+        display: none; /* Hide toggle button on larger screens */
     }
 }
 
-/* Additional Styles for Other Elements */
+/* Styles for heading elements */
 h1, h2, h3, h4, h5, h6 {
     color: #333; /* Dark grey headings */
 }
 
+/* Paragraph styles */
 p {
     margin-bottom: 1rem; /* Spacing after paragraphs */
 }
 
-/* Add more styles as needed for other elements */
+/* Additional styles can be added as needed */
