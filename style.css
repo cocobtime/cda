@@ -1,20 +1,19 @@
-/* Reset default styles */
+/* Reset and Base Styles */
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif; /* Choose your preferred font */
+    font-family: Arial, sans-serif;
 }
 
-/* Body styles */
 body {
-    background-color: #f4f4f4; /* Light grey background */
-    color: #333; /* Dark grey text */
-    line-height: 1.6; /* Spacing for readability */
-    padding: 20px; /* Padding around page content */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Navbar styles */
+/* Navbar Styles */
 .navbar {
     background-color: #333;
     color: white;
@@ -25,19 +24,14 @@ body {
 }
 
 .navbar .logo {
-    font-size: 1.5rem; /* Logo size */
-}
-
-/* Navbar links styles */
-.navbar-links {
-    display: none; /* Hidden by default for mobile */
+    font-size: 1.5rem;
 }
 
 .navbar-links ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    display: none;
 }
 
 .navbar-links ul li {
@@ -48,9 +42,13 @@ body {
 .navbar-links ul li a {
     text-decoration: none;
     color: white;
+    padding: 10px; /* Added for touch friendliness */
 }
 
-/* Toggle button styles for mobile view */
+.navbar-links ul li a:hover {
+    color: #0275d8; /* Hover effect for interactivity */
+}
+
 .toggle-button {
     border: none;
     background: none;
@@ -68,31 +66,41 @@ body {
     background-color: white;
 }
 
-/* Media query for larger screens */
+/* Media Query for Larger Screens */
 @media (min-width: 768px) {
-    .navbar-links {
-        display: flex; /* Show links in a row */
-        align-items: center;
-    }
-
     .navbar-links ul {
+        display: flex;
         flex-direction: row;
-        justify-content: space-around;
     }
 
     .toggle-button {
-        display: none; /* Hide toggle button on larger screens */
+        display: none;
     }
 }
 
-/* Styles for heading elements */
-h1, h2, h3, h4, h5, h6 {
-    color: #333; /* Dark grey headings */
+/* Breadcrumb Styles */
+.breadcrumbs {
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
 }
 
-/* Paragraph styles */
-p {
-    margin-bottom: 1rem; /* Spacing after paragraphs */
+.breadcrumbs a {
+    color: #0275d8;
+    text-decoration: none;
 }
 
-/* Additional styles can be added as needed */
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    color: #6c757d;
+}
+
+/* Content Styles */
+.content {
+    padding: 1rem;
+}

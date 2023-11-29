@@ -1,60 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Your Website Title</title>
-    <style>
-        /* Add your CSS here */
-        #navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #f8f8f8;
-            padding: 10px;
-        }
-
-        #logo {
-            font-size: 24px; /* Example styling for the logo */
-        }
-
-        #navbar-toggle {
-            display: none; /* Hide the toggle button on larger screens */
-        }
-
-        #navbar-links {
-            display: none; /* Initially hide the links on smaller screens */
-        }
-
-        /* Media query for smaller screens */
-        @media (max-width: 600px) {
-            #navbar-toggle {
-                display: block; /* Show the toggle button on smaller screens */
-            }
-
-            #navbar-links {
-                flex-direction: column;
-                width: 100%;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-Friendly Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <div id="logo">Logo Here</div>
-            <button id="navbar-toggle">Menu</button>
-            <div id="navbar-links">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                <!-- More links as needed -->
-            </div>
-        </nav>
-    </header>
-    <script>
-        document.getElementById('navbar-toggle').addEventListener('click', function() {
-            const links = document.getElementById('navbar-links');
-            links.style.display = (links.style.display === 'flex') ? 'none' : 'flex';
-        });
-    </script>
+    <!-- Responsive Navbar -->
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <button class="toggle-button" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumbs">
+        <a href="/">Home</a> &gt;
+        <a href="/category">Category</a> &gt;
+        <span>Current Page</span>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <h1>Welcome to Our Page</h1>
+        <p>This is a sample page with a responsive navbar and breadcrumb navigation.</p>
+        <!-- More content goes here -->
+    </div>
 </body>
 </html>
