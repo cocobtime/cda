@@ -1,59 +1,62 @@
-body {
-    font-family: sans-serif;
-  }
-  
-  h1, h2, p {
+/* Base styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.navbar-links ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    position: relative;
-  }
-  
-  h1 {
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  #toggle-menu {
     display: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
-    width: 40px;
-    height: 40px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
-  #navigation {
-    display: none;
-  }
-  
-  #navigation.active {
-    display: block;
-  }
-  
-  @media (max-width: 768px) {
-    #navigation ul {
-      padding: 0;
-      list-style: none;
-      text-align: center;
+.navbar-links ul li {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.navbar-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.toggle-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .navbar-links ul {
+        display: flex;
+        flex-direction: row;
     }
-  
-    #navigation ul li {
-      padding: 10px 0;
+
+    .toggle-button {
+        display: none;
     }
-  
-    #navigation ul li a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-  
+}
