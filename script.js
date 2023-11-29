@@ -1,4 +1,10 @@
-document.getElementById('navbar-toggle').addEventListener('click', function() {
-  const links = document.getElementById('navbar-links');
-  links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('navbar-toggle').addEventListener('click', function () {
+      var links = document.getElementById('navbar-links');
+      if (links.style.display === 'block') {
+          links.style.display = 'none';
+      } else {
+          links.style.display = 'block';
+      }
+  });
 });
