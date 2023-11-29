@@ -60,3 +60,94 @@
         display: none;
     }
 }
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* You can choose your preferred font */
+}
+
+/* Full body styles */
+body {
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    line-height: 1.6; /* Spacing for readability */
+    padding: 20px; /* Padding around the page content */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+/* Style for navbar links */
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-links ul li {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.navbar-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hamburger menu button styles */
+.toggle-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .navbar-links ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+}
+
+/* Additional Styles for Other Elements */
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Dark grey headings */
+}
+
+p {
+    margin-bottom: 1rem; /* Spacing after paragraphs */
+}
+
+/* Add more styles as needed for other elements */
